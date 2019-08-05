@@ -1,0 +1,108 @@
+@import "../fonts/fonts.css";
+@import "../icons/icons.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-wrapp {
+    margin: 50px 0;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    text-align: center;
+
+    .signUp {
+        font-size: 18px;
+        display: block;
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #registrationForm {
+        display: block;
+        padding: 10px;
+
+        label {
+            display: block;
+            border: 1px solid #ddd;
+            font-size: 0;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: left;
+        }
+
+        input {
+            display: inline-block;
+            vertical-align: middle;
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding-left: 10px;
+
+            &::placeholder {
+                color: #99999b;
+            }
+        }
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px;
+            background: #ddd;
+            font-size: 14px;
+        }
+
+        select {
+            border: none;
+            outline: none;
+            color: #99999b;
+            padding: 10px 0 10px 10px;
+            width: 100%;
+            display: block;
+
+        }
+
+        #agrementLabel {
+            font-size: 14px;
+            border: none;
+            text-align: left;
+
+            input {
+                margin: 0 10px 0 0;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        .btn-hold {
+            text-align: right;
+
+            #btnSubmit {
+                border: 1px solid #ddd;
+                background: #eee;
+                border-radius: 5px;
+                padding: 5px 15px;
+                outline: none;
+            }
+        }
+    }
+}

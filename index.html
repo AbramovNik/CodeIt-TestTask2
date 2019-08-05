@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="form-wrapp">
+                <strong class="signUp">Sign Up</strong>
+                <form action="post" id="registrationForm">
+                    <label for="name"><i class="icon-user"></i><input type="text" name="name" placeholder="First Name"
+                            required id="name"></label>
+                    <label for="secondName"><i class="icon-user"></i><input type="text" name="secondname" required
+                            placeholder="Last Name" id="secondName"></label>
+                    <label for="mail"><i class="icon-message"></i><input type="email" name="email" placeholder="E-mail"
+                            required id="mail"></label>
+                    <label for="select" id='selectLabel'><select name="gender" id="select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select></label>
+                    <label for="password"><i class="icon-asterisk"></i><input type="password" name="pass"
+                            placeholder="Password" id="password"></label>
+                    <label for="agreement" id="agrementLabel"><input type="checkbox" name="check"
+                            id="agreement">Conditions of Agreement</label>
+                    <div class="btn-hold"><button id="btnSubmit">Send</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
